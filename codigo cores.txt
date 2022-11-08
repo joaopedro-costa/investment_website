@@ -1,0 +1,2 @@
+verde	#28fb28
+azul	#03072b
