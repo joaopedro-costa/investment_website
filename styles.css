@@ -8,9 +8,14 @@
     padding: 0;
 }
 
-body, html {
-    background-color: #03072b;
+html{
     overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    z-index: -1000000;
+    background-color: #03072b;
     width: 100%;
 }
 
