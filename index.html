@@ -22,6 +22,18 @@
                 <li><a href="#carreira">Carreira</a></li>
             </ul>
         </nav>
+        <div class="mobilemenu">
+            <div class="hamburguer" onclick="menu(); ativar()">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+            <div class="menu" onclick="ativar(); menu()">
+                <a href="#contato">Contato</a>
+                <a href="#acessoria">Acessoria</a>
+                <a href="#carreira">Carreira</a>
+            </div>
+        </div>
     </header>
 
     <div class="home">
@@ -29,7 +41,7 @@
             <p>Na <b>NSG</b> você é mais que apenas um investidor, você é um <b>PROPRIETÁRIO</b></p>
             <button class="investir"><a href="#criarconta">Invista com a gente</a></button>
         </div>
-        <img src="imagens/dollar-coin.svg">
+        <img class="hiddenright" src="imagens/dollar-coin.svg">
     </div>
 
     <img class="arrow" src="imagens/down-arrow.svg">
@@ -146,8 +158,11 @@
         <div class="cards">
             <div class="card aluisio hiddenleft">
                 <div class="div">
-                    <img class="perfil" src="imagens/aluisio.png">
-                    <h4>Aluísio</h4>
+                    <div class="ftcliente">
+                        <img class="perfil" src="imagens/aluisio.png">
+                        <h4>Aluísio</h4>
+                    </div>
+
                     <p>Invisto em bolsa de valores há cerca de um ano e meio, desde o início com a acessoria e apoio da
                         NSG Invest. Venho alcançando excelentes resultados. São sempre muito solícitos e dispostos a
                         esclarecer e explicar sobre qualquer tipo de dúvida. Esse é o diferencial que faz com que eu
@@ -160,8 +175,11 @@
 
             <div class="card caio hiddenleft">
                 <div class="div">
-                    <img class="perfil" src="imagens/caio.png">
-                    <h4>Caio</h4>
+                    <div class="ftcliente">
+                        <img class="perfil" src="imagens/caio.png">
+                        <h4>Caio</h4>
+                    </div>
+
                     <p>Olá, meu nome é Caio e venho para dar meu feedback sobre esse ótimo escitório. Estou com eles a
                         pouco mais de um ano, e mesmo à pandemia em um cenário caótico, cuidaram muito bem do meu
                         dinheiro. Aqui tenho todo o suporte, toda atenção e apoio para um assunto que temos tantas
@@ -173,8 +191,11 @@
 
             <div class="card weslika hiddenleft">
                 <div class="div">
-                    <img class="perfil" src="imagens/weslika.png">
-                    <h4>Weslika</h4>
+                    <div class="ftcliente">
+                        <img class="perfil" src="imagens/weslika.png">
+                        <h4>Weslika</h4>
+                    </div>
+
                     <p>Eu não tenho do que reclamar. A acessoria me apresenta opções dentro do meu perfil, esclarece as
                         minhas dúvidas e tenho gostado da experiência de investir. Tanto a plataforma quanto o
                         aplicativo da Necton são bem intuitivos e trazem as informações de maneira clara e direta, o que
@@ -185,11 +206,10 @@
         </div>
 
     </div>
-    
+
     <img class="imgfundo" src="imagens/fundo pagina 2.png">
 
     <div class="sobre">
-
         <div class="texto hiddenleft">
             <b>A NSG</b>
             <hr>
@@ -239,13 +259,16 @@
                 <p>Fale conosco agora e tire todas as suas dúvidas sobre como investir melhor e alcançar todos os seu
                     objetivos financeiros.</p>
                 <br>
+                <br>
                 <h2>HORÁRIO DE FUNCIONAMENTO</h2>
                 <p>Segunda à Sexta<br>9:00 - 18:00</p>
 
-                <img src="imagens/whatsapp.svg">
-                <img src="imagens/facebook.svg">
-                <img src="imagens/linkedin.svg">
-                <img src="imagens/instagram.svg">
+                <div class="socialmidia">
+                    <img src="imagens/whatsapp.svg">
+                    <img src="imagens/facebook.svg">
+                    <img src="imagens/linkedin.svg">
+                    <img src="imagens/instagram.svg">
+                </div>
 
             </div>
 

@@ -44,3 +44,16 @@ const observerright = new IntersectionObserver((entriesright) => {
 
 const hiddenright = document.querySelectorAll('.hiddenright');
 hiddenright.forEach((elright) => observerright.observe(elright))
+
+
+/*------------------- MENU HANBURGUER ---------------------*/
+
+function ativar() {
+    let botao = document.querySelector('.hamburguer')
+    botao.classList.toggle('ativar')
+}
+
+function menu() {
+    let menu = document.querySelector('.menu')
+    menu.classList.toggle('menu_ativo')
+}
