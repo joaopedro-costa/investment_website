@@ -8,12 +8,13 @@
     padding: 0;
 }
 
-html{
+html {
     overflow-x: hidden;
     width: 100%;
 }
 
 body {
+    overflow-x: hidden;
     z-index: -1000000;
     background-color: #03072b;
     width: 100%;
@@ -51,7 +52,7 @@ nav {
     font-weight: 100;
 }
 
-.menu{
+.menu {
     z-index: 100;
     width: 100%;
     background-color: hsla(234, 87%, 9%, 0.7);
@@ -68,27 +69,29 @@ nav {
     font-size: 6vw;
     font-weight: 300;
     transition: .4s;
-
 }
 
+.menu a{
+    color: #28fb28;
+}
 
-.ativar .linha:nth-child(1){
+.ativar .linha:nth-child(1) {
     transform: translateY(2vw) rotate(-45deg);
 }
 
-.ativar .linha:nth-child(2){
+.ativar .linha:nth-child(2) {
     width: 0px;
 }
 
-.ativar .linha:nth-child(3){
+.ativar .linha:nth-child(3) {
     transform: translateY(-2vw) rotate(45deg);
 }
 
-.menu_ativo{
+.menu_ativo {
     transform: translateY(0);
 }
 
-.hamburguer{
+.hamburguer {
     z-index: 110;
     display: none;
     justify-content: space-around;
@@ -97,7 +100,7 @@ nav {
     gap: 2vw 0;
 }
 
-.linha{
+.linha {
     background-color: white;
     width: 2.2vw;
     height: .1px;
@@ -701,15 +704,41 @@ nav li a:hover {
 
 /*---------------------------------------- COMPARTIBILIDADE ----------------------------------/*/
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
 
-    body{
-        overflow-x: hidden;
+    .fundoo {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        background-image: url(imagens/fundo\ pagina\ inicial.png);
+        background-size: cover;
+        box-sizing: border-box;
+        filter: grayscale(1);
+    }
+
+    .img-fundo {
+        display: none;
+    }
+
+    .fundodinheiro {
+        width: 100vw;
+        top: 320vw;
+        left: -15vw;
+        opacity: .2;
+    }
+
+    .imgfundo {
+        width: 100vw;
+        top: 150vw;
+        opacity: .8;
+        left: 0;
+        filter: grayscale(1);
     }
 
     /*------------- NAVBAR ---------------*/
 
-     header img {
+    header img {
         height: 8vw;
     }
 
@@ -717,11 +746,11 @@ nav li a:hover {
         padding: 3vw 0;
     }
 
-    .menu{
+    .menu {
         display: flex;
     }
 
-    .hamburguer{
+    .hamburguer {
         position: absolute;
         width: fit-content;
         right: 10vw;
@@ -732,15 +761,15 @@ nav li a:hover {
         flex-direction: column;
     }
 
-    .hamburguer:hover{
+    .hamburguer:hover {
         cursor: pointer;
     }
 
-    .hamburguer .linha{
+    .hamburguer .linha {
         width: 5vw;
     }
 
-    nav ul{
+    nav ul {
         display: none;
     }
 
@@ -866,17 +895,6 @@ nav li a:hover {
 
     /*-------------- COMO FUNCIONA ---------------*/
 
-    .fundodinheiro {
-        width: 100vw;
-        position: absolute;
-        top: 200vw;
-        left: -5vw;
-        filter: grayscale(1);
-        opacity: .3;
-        z-index: -1000;
-    }
-
-
     .cmfunciona {
         text-align: center;
         display: flex;
@@ -961,16 +979,16 @@ nav li a:hover {
         padding: 6vw 0;
     }
 
-    .div{
+    .div {
         display: flex;
         text-align: left;
     }
-    
-    .div p{
+
+    .div p {
         font-size: 4vw;
     }
 
-    .ftcliente{
+    .ftcliente {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -994,18 +1012,8 @@ nav li a:hover {
     }
 
     .card .estrelas {
-        margin: -1vw 21.5vw 0 0 ;
+        margin: -1vw 21.5vw 0 0;
         width: 11vw;
-    }
-
-    .imgfundo {
-        position: absolute;
-        z-index: -10000;
-        width: 100vw;
-        top: 10rem;
-        filter: grayscale(1);
-        opacity: .5;
-        left: 0;
     }
 
     /*--------------- SOBRE ---------------*/
@@ -1057,7 +1065,7 @@ nav li a:hover {
     .fundoloc {
         position: absolute;
         width: 100vw;
-        top: 810vw;
+        top: 915vw;
         filter: grayscale(1);
         opacity: .8;
         z-index: -1000;
@@ -1176,7 +1184,7 @@ nav li a:hover {
         margin-bottom: 3vw;
     }
 
-   .footer img {
+    .footer img {
         margin: 5vw 2vw 5vw 2vw;
         width: 5vw;
         transition: .3s;
