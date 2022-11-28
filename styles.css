@@ -37,7 +37,7 @@ header {
 }
 
 header img {
-    height: 3vw;
+    height: 3.5vw;
 }
 
 nav {
@@ -53,9 +53,8 @@ nav {
 }
 
 .menu {
-    z-index: 100;
     width: 100%;
-    background-color: hsla(234, 87%, 9%, 0.7);
+    background-color: rgba(3, 7, 43, 0.7);
     backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
@@ -92,7 +91,7 @@ nav {
 }
 
 .hamburguer {
-    z-index: 110;
+    z-index: 1;
     display: none;
     justify-content: space-around;
     flex-direction: column;
@@ -539,15 +538,8 @@ nav li a:hover {
 /*-------------- FOOTER-------------*/
 
 .footer {
+    margin-top: 5vh;
     background-color: #28fb28;
-}
-
-.footer .direitos {
-    color: #000;
-    font-weight: 400;
-    text-align: justify;
-    padding: 1vw 3vw;
-    font-size: 1vw;
 }
 
 .footer .copyright p {
@@ -563,11 +555,10 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     gap: 0 16vw;
-    margin-top: 12vw;
 }
 
 .ctn {
-    margin-top: 3vw;
+    margin: 3vh;
     font-size: 1.3vw;
 }
 
@@ -777,7 +768,7 @@ nav li a:hover {
 
     .home {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -806,15 +797,15 @@ nav li a:hover {
     }
 
     .inicio button {
-        width: 30vh;
-        height: 6vh;
+        width: 25vh;
+        height: 4vh;
         margin-top: 3vw;
         padding: 1vw;
         background-color: #fff;
     }
 
     .inicio a {
-        font-size: 2.4vh;
+        font-size: 2vh;
     }
 
     .arrow {
@@ -824,16 +815,16 @@ nav li a:hover {
 
     @keyframes flutuant {
         0% {
-            top: 93vh;
-            opacity: .1;
+            top: 80vh;
+            opacity: .0;
         }
 
         50% {
-            top: 94vh;
+            top: 84vh;
         }
 
         100% {
-            top: 93vh;
+            top: 80vh;
         }
 
     }
@@ -1065,7 +1056,7 @@ nav li a:hover {
     .fundoloc {
         position: absolute;
         width: 100vw;
-        top: 915vw;
+        top: 970vw;
         filter: grayscale(1);
         opacity: .8;
         z-index: -1000;
@@ -1111,15 +1102,9 @@ nav li a:hover {
     /*-------------- FOOTER-------------*/
 
     .footer {
+        margin-top: 0;
+        padding: 1vh 0 8vh 0;
         background-color: #28fb28;
-    }
-
-    .footer .direitos {
-        color: #000;
-        font-weight: 400;
-        text-align: justify;
-        padding: 1vw 3vw;
-        font-size: 1.5vw;
     }
 
     .footer .copyright p {
@@ -1137,7 +1122,6 @@ nav li a:hover {
         align-items: center;
         flex-direction: column;
         gap: 0 1vw;
-        margin-top: 0vw;
     }
 
     .ctn {
@@ -1145,8 +1129,8 @@ nav li a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 0vw;
         text-align: center;
+        margin: 0;
     }
 
     .ct1 {
